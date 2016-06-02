@@ -1,0 +1,187 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	zoom: 1;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+body{
+	font-size: 14px;
+}
+.header{
+	height: 50px;
+	background-color: #0c0c0c;
+	min-width: 1040px;
+}
+.toCenter{
+	width: 1040px;
+	margin: 0 auto;
+}
+.header-content{
+	height: 50px;
+}
+.logo{
+	height: 50px;
+	float: left;
+	overflow: hidden;
+}
+.logo-img{
+	vertical-align: top;
+	height: 28px;
+	margin: 11px 0;
+}
+.small-nav{
+	float: right;
+	height: 50px;
+	width: 400px;
+}
+.nav-item{
+	padding-right: 22px;
+	padding-left: 20px;
+	position: relative;
+	height: 50px;
+	color: #8d8d8d;
+	float: right;
+}
+.nav-item:after{
+	content: "";
+	width: 1px;
+	height: 14px;
+	background-color: #3c3c3c;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -7px;
+}
+.nav-item a{
+	color: #8d8d8d;
+	line-height: 50px;
+}
+.nav-wrap{
+	height: 50px;
+}
+.end-item{
+	padding-right: 0;
+}
+.first-item{
+	padding-left: 0;
+}
+.end-item:after{
+	background-color: #0c0c0c;
+}
+.login{
+	margin-right: 20px;
+}
+.footer{
+	min-width: 1040px;
+}
+.footer-nav{
+	min-width: 1040px;
+	background-color: #0c0c0c;
+	padding-bottom: 32px;
+}
+.some-intro{
+	height: 70px;
+	border-bottom: 1px solid #343434;
+}
+.intro-item{
+	width: 630px;
+	margin: 0 auto;
+	height: 70px;
+}
+.color-ff-bold{
+	color: #fff;
+	font-weight: bold;
+}
+.intro-list{
+	padding: 0 45px;
+	line-height: 70px;
+	color: #717171;
+}
+.f-nav-content{
+	padding-top: 16px;
+}
+.f-content-item{
+	width: 20%;
+	float: left;
+	text-align: left;
+}
+.f-list-title{
+	padding-left: 16px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #717171;
+}
+.n-other-list a{
+	padding-left: 16px;
+	line-height: 38px;
+	color: #bbbbbb;
+}
+.footer-content-wrap{
+	background-color: #000000;
+	min-width: 1040px;
+	height: 106px;
+}
+.rights{
+	overflow: hidden;
+	padding-left: 84px;
+	padding-top: 26px;
+	height: 82px;
+}
+.footer-logo{
+	height: 106px;
+}
+.footer-lgo-img{
+	height: 28px;
+	margin: 39px 0 39px 58px;
+}
+.r-list{
+	position: relative;
+	float: left;
+	height: 30px;
+	padding-right: 22px;
+	padding-left: 20px;
+}
+.r-list:after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 14px;
+	background-color: #202020;
+	top: 50%;
+	right: 0;
+	margin-top: -7px;
+}
+.r-list a{
+	color: #808080;
+	line-height: 30px;
+}
+.first-list{
+	padding-left: 0px;
+}
+.end-list{
+	padding-right: 0px;
+}
+.end-list:after{
+	width: 0px;
+}
+.copyright{
+	color: #585858;
+	line-height: 32px;
+}
+
+
+
+
+
+
+
+
+
