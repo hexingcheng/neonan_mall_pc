@@ -63,6 +63,10 @@ body{
 .nav-item a{
 	color: #8d8d8d;
 	line-height: 50px;
+	outline: none;
+}
+.nav-item a:hover {
+	color: #fff;
 }
 .nav-wrap{
 	height: 50px;
@@ -123,6 +127,10 @@ body{
 	padding-left: 16px;
 	line-height: 38px;
 	color: #bbbbbb;
+	outline: none;
+}
+.n-other-list a:hover{
+	color: #fff;
 }
 .footer-content-wrap{
 	background-color: #000000;
@@ -162,6 +170,9 @@ body{
 .r-list a{
 	color: #808080;
 	line-height: 30px;
+}
+.r-list a:hover{
+	color: #fff;
 }
 .first-list{
 	padding-left: 0px;
