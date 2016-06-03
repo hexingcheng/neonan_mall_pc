@@ -15,7 +15,7 @@ ul, ol {
 }
 a {
     text-decoration: none;
-    outline: none;
+    outline: none !important;
     transition: color .2s;
 }
 a:active {
@@ -23,7 +23,8 @@ a:active {
 }
 a:active,
 a:hover {
-    outline: 0 none;
+    *outline: 0 none;
+    outline: none !important;
 }
 a:focus {
     outline: 1px dotted;
