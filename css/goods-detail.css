@@ -2,3 +2,59 @@
 	padding-top: 40px;
 	background-color: #f8f8f8;
 }
+.de-info{
+	overflow: hidden;
+}
+.detail-pic{
+	overflow: hidden;
+	width: 428px;
+	background-color: #fff;
+	position: relative;
+}
+.d-pics-wrap{
+	
+}
+.small-pic{
+	position: absolute;
+	width: 94px;
+	height: 100%;
+	padding-left: 10px;
+	background-color: #f8f8f8;
+	top: 0;
+	right: 0;
+}
+.mid-pic{
+	margin:48px 28px;
+}
+.per-img,.next-img{
+	cursor: pointer;
+	width: 12px;
+	height: 6px;
+	position: absolute;
+	left: 50%;
+	margin-left: -6px;
+}
+.per-img{
+	top: 0px;
+}
+.next-img{
+	bottom: 0px;
+}
+.small-pic-item{
+	margin-top: 14px; 
+	width: 92px;
+	height: 110px;
+	max-height: 30%;
+	cursor: pointer;
+	overflow: hidden;
+}
+.small-pic-item img{
+	height: 100%;
+	width: 100%;
+}
+.small-pic-item:hover{
+	width:88px;
+	height: 104px;
+
+	border:3px solid #d1d1d1;
+}
