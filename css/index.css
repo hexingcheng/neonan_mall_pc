@@ -2,15 +2,7 @@ body {
     line-height: 1.2;
 }
 
-.content {
-    padding: 30px 0;
-}
-
 /* 首页滚动部分 */
-.nn-inner-con {
-    width: 1040px;
-    margin: 0 auto;
-}
 .swiper-slide {
     height: 500px;
 }
