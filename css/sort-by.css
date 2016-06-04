@@ -64,9 +64,6 @@
     opacity: 1;
 }
 
-
-
-
 /* ÓÒ²àÄÚÈÝÇø */
 .nn-right-content {
     margin-left: 260px;
@@ -88,9 +85,30 @@
 
 }
 
-
-
-
+.nn-sort-condition {
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #333;
+}
+.nn-sort-condition .al-choose {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.nn-sort-condition .al-choose .choose-item {
+    display: inline-block;
+    background-color: #111;
+    color: #fff;
+    padding: 0 10px;
+    margin-left: 15px;
+}
+.nn-sort-condition .al-choose img.close {
+    width: 10px;
+    vertical-align: baseline;
+    margin-right: 3px;
+    cursor: pointer;
+}
 
 
 
