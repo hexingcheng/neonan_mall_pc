@@ -1,0 +1,163 @@
+/* ×ó±ß²Ëµ¥À¸ */
+.nn-left-menu {
+    width: 250px;
+    background-color: #fff;
+}
+.nn-all-sort .list-item .inner-bar {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+}
+.nn-all-sort .list-item .avatar-box {
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+}
+.nn-all-sort .list-item .avatar-box img {
+    width: 170px;
+    height: 170px;
+}
+.nn-all-sort .list-item .triangle-up {
+    cursor: pointer;
+    margin-top: 5px;
+}
+.nn-all-sort .list-item .img-icon {
+    display: inline-block;
+    width: 20px;
+    height: 100%;
+    margin-right: 5px;
+}
+.nn-all-sort .list-item .img-icon img {
+    width: 20px;
+    vertical-align: -2px;
+}
+.nn-all-sort .list-item:first-child {
+    border-bottom: 2px solid #eee;
+}
+.nn-all-sort .list-item .plus-icon,
+.nn-all-sort .list-item .subtraction-icon {
+    font-weight: bold;
+    color: #eee;
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.nn-all-sort .list-item .subtraction-icon {
+    font-size: 35px;
+}
+.sub-menu-list {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.sub-menu-list .sub-list-item {
+    padding: 7px 15px;
+    font-size: 16px;
+}
+.sub-menu-list .sub-list-item .item-link {
+    display: block;
+    color: #cecece;
+}
+.sub-menu-list .sub-list-item .item-link .triangle-right {
+    display: inline-block;
+    margin: 7px 10px 0 7px;
+    opacity: 0;
+    border-left-color: #f75660;
+    transition: all .3s ease;
+}
+.sub-menu-list .sub-list-item .item-link:hover {
+    color: #333;
+}
+.sub-menu-list .sub-list-item .item-link:hover .triangle-right {
+    opacity: 1;
+}
+
+
+
+/* ÓÒ±ßÄÚÈÝ²¿·Ö */
+.nn-right-content {
+    margin-left: 260px;
+    padding: 0 20px 50px 20px;
+    background-color: #fff;
+}
+.nn-info-settings .info-settings {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    text-indent: 5px;
+}
+.nn-info-settings p.info-avatar {
+    margin: 30px 15px;
+}
+p.info-avatar .info-avatar-settings {
+    display: block;
+    width: 170px;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+}
+p.info-avatar .info-avatar-settings .cover-show {
+    position: absolute;
+    top: -170px;
+    width: 100%;height: 100%;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    transition: all .3s ease;
+}
+p.info-avatar .info-avatar-settings .cover-show a {
+    line-height: 170px;
+    font-size: 16px;
+    color: #fff;
+}
+p.info-avatar .info-avatar-settings .cover-show a:hover {
+    text-decoration: underline;
+}
+p.info-avatar .info-avatar-settings:hover .cover-show {
+    top: 0;
+}
+p.info-avatar .info-avatar-settings img {
+    width: 170px;
+    height: 170px;
+}
+.nn-info-settings .info-input-row {
+    margin: 20px 0;
+}
+.nn-info-settings .info-input-row p.input-wrap {
+    width: 390px;
+}
+.nn-info-settings .info-input-row p.input-wrap input {
+    display: block;
+    width: 356px;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 1px #000;
+}
+.nn-info-settings .button-group {
+    margin: 40px 0;
+}
+.nn-info-settings .button-group button {
+    width: 190px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    background: #f30110;
+    border: none;
+    border-radius: 5px;
+}
+.nn-info-settings .button-group button:active {
+    background: #E85122;
+}
+
+
+
+
+
+
+
+
+
+
+
