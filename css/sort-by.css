@@ -109,11 +109,82 @@
     margin-right: 3px;
     cursor: pointer;
 }
+.nn-sort-condition p.sort-row {
+    padding: 10px;
+}
+.nn-sort-condition .sort-row .sort-row-title {
+    color: #dbdbdb;
+}
+.nn-sort-condition .sort-row .link-item {
+    display: inline-block;
+    padding: 0 10px;
+}
+.nn-sort-condition .sort-row .link-item a {
+    color: #989898;
+    position: relative;
+}
+.nn-sort-condition .sort-row .link-item a:after {
+    position: absolute;
+    content: '';
+    left: 0;right: 0;
+    bottom: -5px;
+    height: 2px;background-color: #f75660;
+    opacity: 0;
+    transition: all .2s ease;
+}
+.nn-sort-condition .sort-row .link-item a:hover:after {
+    opacity: 1;
+}
 
+/* 商品item */
+.nn-goods-inner-item .goods-inner {
+    width: 801px;
+    margin-left: -10px;
+}
+.nn-goods-inner-item .goods-item-wrap {
+    width: 245px;
+    margin: 0 10px 20px 10px;
+}
+.nn-goods-inner-item .goods-cover {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+}
+.nn-goods-inner-item .goods-title {
+     margin-top: 10px;
+}
+.nn-goods-inner-item .goods-title a {
+    color: #a8a8a8;
+}
+.nn-goods-inner-item .goods-title a:hover {
+    text-decoration: underline;
+}
+.nn-goods-inner-item p.goods-price {
+    color: #f5686f;
+}
 
-
-
-
+/* 分页样式 */
+.nn-pagiation-bar {
+    margin: 20px 0;
+}
+.nn-pagiation-bar .page-item {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+}
+.nn-pagiation-bar .page-item a {
+    display: block;
+    background-color: #d2d2d2;
+    transition: all .2s ease;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 22px;
+}
+.nn-pagiation-bar .page-item a:hover {
+    background-color: #111111;
+}
 
 
 
