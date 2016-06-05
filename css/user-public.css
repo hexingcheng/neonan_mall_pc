@@ -1,0 +1,73 @@
+/* ×ó±ß²Ëµ¥À¸ */
+.nn-left-menu {
+    width: 250px;
+    background-color: #fff;
+}
+.nn-all-sort .list-item .inner-bar {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+}
+.nn-all-sort .list-item .avatar-box {
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+}
+.nn-all-sort .list-item .avatar-box img {
+    width: 170px;
+    height: 170px;
+}
+.nn-all-sort .list-item .triangle-up {
+    cursor: pointer;
+    margin-top: 5px;
+}
+.nn-all-sort .list-item .img-icon {
+    display: inline-block;
+    width: 20px;
+    height: 100%;
+    margin-right: 5px;
+}
+.nn-all-sort .list-item .img-icon img {
+    width: 20px;
+    vertical-align: -2px;
+}
+.nn-all-sort .list-item:first-child {
+    border-bottom: 2px solid #eee;
+}
+.nn-all-sort .list-item .plus-icon,
+.nn-all-sort .list-item .subtraction-icon {
+    font-weight: bold;
+    color: #eee;
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.nn-all-sort .list-item .subtraction-icon {
+    font-size: 35px;
+}
+.sub-menu-list {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.sub-menu-list .sub-list-item {
+    padding: 7px 15px;
+    font-size: 16px;
+}
+.sub-menu-list .sub-list-item .item-link {
+    display: block;
+    color: #cecece;
+}
+.sub-menu-list .sub-list-item .item-link .triangle-right {
+    display: inline-block;
+    margin: 7px 10px 0 7px;
+    opacity: 0;
+    border-left-color: #f75660;
+    transition: all .3s ease;
+}
+.sub-menu-list .sub-list-item .item-link:hover {
+    color: #333;
+}
+.sub-menu-list .sub-list-item .item-link:hover .triangle-right {
+    opacity: 1;
+}
