@@ -71,3 +71,12 @@
 .sub-menu-list .sub-list-item .item-link:hover .triangle-right {
     opacity: 1;
 }
+
+/* 内容区共有 */
+.nn-right-content {
+    margin-left: 260px;
+    padding: 0 20px 50px 20px;
+    background-color: #fff;
+}
+
+

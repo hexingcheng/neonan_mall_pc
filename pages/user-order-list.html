@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/user-public.css"/>
-    <link rel="stylesheet" href="../css/user-info-settings.css"/>
+    <link rel="stylesheet" href="../css/user-order-list.css"/>
 </head>
 <body>
 <div class="header">
@@ -95,42 +95,169 @@
         <!-- 右边内容分区栏 -->
         <div class="nn-right-content">
 
-            <div class="nn-info-settings">
-                <p class="info-settings">
-                    <span class="info-settings-txt">已筛选条件</span>
+            <div class="nn-order-list">
+                <p class="order-list-title">
+                    <span class="order-list-title-txt">我的订单</span>
+                </p>
+                <p class="nn-order-status">
+                    <span class="status-item"><a class="active" href="">全部订单</a></span>
+                    <span class="status-item"><a href="">待付款</a></span>
+                    <span class="status-item"><a href="">待发货</a></span>
+                    <span class="status-item"><a href="">已发货</a></span>
+                    <span class="status-item"><a href="">已完成</a></span>
                 </p>
 
-                <p class="info-avatar">
-                    <span class="info-avatar-settings">
-                        <img src="../image/img/head-img.png" alt=""/>
-                        <span class="cover-show">
-                            <a href="">点击修改头像</a>
-                        </span>
-                    </span>
-                </p>
+                <div class="nn-order-list-wrap">
+                    <div class="order-list-item pending-payment">
+                        <div class="order-num-box">
+                            <p class="order-status pull-right">待付款</p>
+                            <p class="order-string">
+                                <span class="order-item-txt">订单编号:</span>
+                                <span class="">5678908776545677654</span>
+                            </p>
+                        </div>
+                        <div class="order-item-detail">
+                            <div class="order-cover pull-left">
+                                <img src="../image/img/head-img.png" alt=""/>
+                            </div>
+                            <div class="right-button-group pull-right">
+                                <span class="button-item"><button class="current">立即付款</button></span>
+                                <span class="button-item"><button class="">修改订单</button></span>
+                                <span class="button-item"><button class="">取消订单</button></span>
+                            </div>
+                            <div class="main-detail-box">
+                                <h3 class="order-title"><a href="">NOPAIN NOGAIN 牛男款新款夏季 T恤限量发售</a></h3>
+                                <p class="size-color">
+                                    <span class="color margin-r-20">颜色：白色</span>
+                                    <span class="size">尺码：XL</span>
+                                </p>
+                                <p class="recieve-address">收货地址：上海市 静安区 江宁路123号 大的公寓12</p>
+                                <p class="price-wrap">
+                                    <span class="unit-price-wrap margin-r-20">
+                                        ￥<span class="unit-wrap price">189.00</span> x <span class="item-num">2</span>
+                                    </span>
+                                    <span class="unit-price-wrap">
+                                        总计：￥<span class="unit-wrap price">396.00</span><span class="item-fee-status">(含运费)</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="info-input-row">
-                    <p class="input-wrap">
-                        <input type="text" placeholder="请填写昵称"/>
-                    </p>
-                </div>
-                <div class="info-input-row">
-                    <p class="input-wrap">
-                        <input type="text" placeholder="1243565432(注册手机号/账号)"/>
-                    </p>
-                </div>
-                <div class="info-input-row">
-                    <p class="input-wrap">
-                        <input type="text" placeholder="请填写常用邮箱"/>
-                    </p>
-                </div>
-                <div class="button-group">
-                    <button class="save-btn">保存</button>
+                    <div class="order-list-item being-delivered">
+                        <div class="order-num-box">
+                            <p class="order-status pull-right">待发货</p>
+                            <p class="order-string">
+                                <span class="order-item-txt">订单编号:</span>
+                                <span class="">5678908776545677654</span>
+                            </p>
+                        </div>
+                        <div class="order-item-detail">
+                            <div class="order-cover pull-left">
+                                <img src="../image/img/head-img.png" alt=""/>
+                            </div>
+                            <div class="right-button-group pull-right">
+                                <span class="button-item"><button class="">查看订单</button></span>
+                                <span class="button-item"><button class="">催牛哥发货</button></span>
+                            </div>
+                            <div class="main-detail-box">
+                                <h3 class="order-title"><a href="">NOPAIN NOGAIN 牛男款新款夏季 T恤限量发售</a></h3>
+                                <p class="size-color">
+                                    <span class="color margin-r-20">颜色：白色</span>
+                                    <span class="size">尺码：XL</span>
+                                </p>
+                                <p class="recieve-address">收货地址：上海市 静安区 江宁路123号 大的公寓12</p>
+                                <p class="price-wrap">
+                                    <span class="unit-price-wrap margin-r-20">
+                                        ￥<span class="unit-wrap price">189.00</span> x <span class="item-num">2</span>
+                                    </span>
+                                    <span class="unit-price-wrap">
+                                        总计：￥<span class="unit-wrap price">396.00</span><span class="item-fee-status">(含运费)</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-list-item already-shipped">
+                        <div class="order-num-box">
+                            <p class="order-status pull-right">已发货</p>
+                            <p class="order-string">
+                                <span class="order-item-txt">订单编号:</span>
+                                <span class="">5678908776545677654</span>
+                            </p>
+                        </div>
+                        <div class="order-item-detail">
+                            <div class="order-cover pull-left">
+                                <img src="../image/img/head-img.png" alt=""/>
+                            </div>
+                            <div class="right-button-group pull-right">
+                                <span class="button-item"><button class="">查看订单</button></span>
+                                <span class="button-item"><button class="">查看物流</button></span>
+                                <span class="button-item"><button class="current">确定发货</button></span>
+                            </div>
+                            <div class="main-detail-box">
+                                <h3 class="order-title"><a href="">NOPAIN NOGAIN 牛男款新款夏季 T恤限量发售</a></h3>
+                                <p class="size-color">
+                                    <span class="color margin-r-20">颜色：白色</span>
+                                    <span class="size">尺码：XL</span>
+                                </p>
+                                <p class="recieve-address">收货地址：上海市 静安区 江宁路123号 大的公寓12</p>
+                                <p class="price-wrap">
+                                    <span class="unit-price-wrap margin-r-20">
+                                        ￥<span class="unit-wrap price">189.00</span> x <span class="item-num">2</span>
+                                    </span>
+                                    <span class="unit-price-wrap">
+                                        总计：￥<span class="unit-wrap price">396.00</span><span class="item-fee-status">(含运费)</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-list-item already-sign">
+                        <div class="order-num-box">
+                            <p class="order-status pull-right">已签收</p>
+                            <p class="order-string">
+                                <span class="order-item-txt">订单编号:</span>
+                                <span class="">5678908776545677654</span>
+                            </p>
+                        </div>
+                        <div class="order-item-detail">
+                            <div class="order-cover pull-left">
+                                <img src="../image/img/head-img.png" alt=""/>
+                            </div>
+                            <div class="right-button-group pull-right">
+                                <span class="button-item"><button class="">查看订单</button></span>
+                                <span class="button-item"><button class="">五星好评</button></span>
+                                <span class="button-item"><button class="">删除订单</button></span>
+                            </div>
+                            <div class="main-detail-box">
+                                <h3 class="order-title"><a href="">NOPAIN NOGAIN 牛男款新款夏季 T恤限量发售</a></h3>
+                                <p class="size-color">
+                                    <span class="color margin-r-20">颜色：白色</span>
+                                    <span class="size">尺码：XL</span>
+                                </p>
+                                <p class="recieve-address">收货地址：上海市 静安区 江宁路123号 大的公寓12</p>
+                                <p class="price-wrap">
+                                    <span class="unit-price-wrap margin-r-20">
+                                        ￥<span class="unit-wrap price">189.00</span> x <span class="item-num">2</span>
+                                    </span>
+                                    <span class="unit-price-wrap">
+                                        总计：￥<span class="unit-wrap price">396.00</span><span class="item-fee-status">(含运费)</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
+                <div class="nn-loading-more">
+                    <button class="loadding-more">加载更多...</button>
+                </div>
 
             </div>
-
 
         </div>
     </div>
