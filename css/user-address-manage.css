@@ -1,0 +1,100 @@
+.nn-address-list .address-list-title {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    text-indent: 5px;
+}
+p.nn-address-status {
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+    height: 35px;
+}
+p.nn-address-status .status-item {
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+p.nn-address-status .status-item a {
+    display: block;
+    color: #111;
+    background-color: #eee;
+    transition: background-color .2s ease;
+}
+p.nn-address-status .status-item a:hover {
+    color: #fff;
+    background-color: #000;
+}
+p.nn-address-status .status-item a.active {
+    color: #fff;
+    background-color: #000;
+}
+.address-list-item {
+    border: 1px solid #eee;
+    margin-top: 10px;
+}
+.address-list-item .address-num-box {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+.address-list-item .address-num-box .address-string a {
+    color: #282828;
+}
+.address-list-item .address-item-detail {
+    padding: 15px;
+    background-color: #fbfbfb;
+}
+.address-list-item .right-button-group {
+    width: 120px;
+    text-align: center;
+}
+.address-list-item .right-button-group button {
+    width: 110px;
+    background: #ededed;
+    color: #282828;
+    border: none;
+    font-size: 16px;
+    height: 35px;
+    margin: 3px 0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.address-list-item .right-button-group button:active {
+    background: #FBF0F0;
+}
+.address-list-item .right-button-group button:focus {
+    outline: none;
+}
+.address-list-item .right-button-group button.current {
+    background: #f30110;
+    color: #fff;
+}
+.address-list-item .right-button-group button.current:active {
+    background: #EF3F4A;
+}
+
+.main-detail-box {
+    font-size: 16px;
+    margin-right: 130px;
+}
+.main-detail-box span.address-info-title {
+    color: #919191;
+    margin-right: 5px;
+}
+.main-detail-box span.info-row {
+    color: #2b2b2b;
+}
+.nn-usual-address {
+    margin-top: 30px;
+}
+.nn-usual-address button.usual-btn {
+    width: 100%;
+    height: 48px;
+}
+
+
