@@ -3,6 +3,8 @@
  */
 (function($){
     $(function() {
+
+        //  left menu
         var $allSubList = $("#all-sort").find(".sub-menu-list");
         var $allIconToggle = $("#all-sort").find(".icon-toggle");
         $("#all-sort").on("click", ".icon-toggle", function(){
@@ -24,5 +26,26 @@
                 $subList.slideUp();
             }
         })
+
+        // popover
+        var $commentMask = $(".nn-comment-mask");
+        var $commentBox = $(".nn-comment-content");
+        $("#nn-order-list-wrap").on("click", ".comment", function(){
+            $commentMask.css("display", "block");
+            $commentBox.css("display", "block");
+            $("body").addClass("forbidden-scroll");
+        });
+        $commentBox.on("click", ".close-comment", function(){
+            $commentMask.css("display", "none");
+            $commentBox.css("display", "none");
+            $("body").removeClass("forbidden-scroll");
+        });
+        $commentMask.on("click", function(){
+            $commentMask.css("display", "none");
+            $commentBox.css("display", "none");
+            $("body").removeClass("forbidden-scroll");
+        })
+
+
     })
 })(jQuery)

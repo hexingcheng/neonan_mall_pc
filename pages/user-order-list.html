@@ -364,32 +364,5 @@
 
 <script src="../js/lib/jquery.min.js"></script>
 <script src="../js/user-public.js"></script>
-<script>
-    (function($){
-        $(function(){
-            var $commentMask = $(".nn-comment-mask");
-            var $commentBox = $(".nn-comment-content");
-            $("#nn-order-list-wrap").on("click", ".comment", function(){
-                $commentMask.css("display", "block");
-                $commentBox.css("display", "block");
-                $("body").addClass("forbidden-scroll");
-            });
-            $commentBox.on("click", ".close-comment", function(){
-                $commentMask.css("display", "none");
-                $commentBox.css("display", "none");
-                $("body").removeClass("forbidden-scroll");
-            });
-            $commentMask.on("click", function(){
-                $commentMask.css("display", "none");
-                $commentBox.css("display", "none");
-                $("body").removeClass("forbidden-scroll");
-            })
-
-
-
-
-        })
-    })(jQuery)
-</script>
 </body>
 </html>
