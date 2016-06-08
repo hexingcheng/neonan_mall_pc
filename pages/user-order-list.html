@@ -107,7 +107,7 @@
                     <span class="status-item"><a href="">已完成</a></span>
                 </p>
 
-                <div class="nn-order-list-wrap">
+                <div class="nn-order-list-wrap" id="nn-order-list-wrap">
                     <div class="order-list-item pending-payment">
                         <div class="order-num-box">
                             <p class="order-status pull-right">待付款</p>
@@ -229,7 +229,7 @@
                             </div>
                             <div class="right-button-group pull-right">
                                 <span class="button-item"><a href="javascript:;" class="button">查看订单</a></span>
-                                <span class="button-item"><a href="javascript:;" class="button">五星好评</a></span>
+                                <span class="button-item"><a href="javascript:;" class="button comment">五星好评</a></span>
                                 <span class="button-item"><a href="javascript:;" class="button">删除订单</a></span>
                             </div>
                             <div class="main-detail-box">
@@ -341,7 +341,55 @@
         </div>
     </div>
 </div>
+<!-- 评论框内容 -->
+<div class="nn-comment-mask"></div>
+<div class="nn-comment-content">
+    <div class="close-row clearfix">
+        <div class="close-comment pull-right"><img src="../image/icon/comment-close-icon.png" alt=""/></div>
+    </div>
+    <div class="star-wrap text-center">
+        <img src="../image/icon/star-active-icon.png" alt=""/>
+        <img src="../image/icon/star-active-icon.png" alt=""/>
+        <img src="../image/icon/star-active-icon.png" alt=""/>
+        <img src="../image/icon/star-active-icon.png" alt=""/>
+        <img src="../image/icon/star-icon.png" alt=""/>
+    </div>
+    <div class="comment-content">
+        <textarea class="content-area" placeholder="请填写评论，感谢您的支持！"></textarea>
+    </div>
+    <div class="text-center">
+        <button class="comment-submit">提交评论</button>
+    </div>
+</div>
+
 <script src="../js/lib/jquery.min.js"></script>
 <script src="../js/user-public.js"></script>
+<script>
+    (function($){
+        $(function(){
+            var $commentMask = $(".nn-comment-mask");
+            var $commentBox = $(".nn-comment-content");
+            $("#nn-order-list-wrap").on("click", ".comment", function(){
+                $commentMask.css("display", "block");
+                $commentBox.css("display", "block");
+                $("body").addClass("forbidden-scroll");
+            });
+            $commentBox.on("click", ".close-comment", function(){
+                $commentMask.css("display", "none");
+                $commentBox.css("display", "none");
+                $("body").removeClass("forbidden-scroll");
+            });
+            $commentMask.on("click", function(){
+                $commentMask.css("display", "none");
+                $commentBox.css("display", "none");
+                $("body").removeClass("forbidden-scroll");
+            })
+
+
+
+
+        })
+    })(jQuery)
+</script>
 </body>
 </html>

@@ -122,3 +122,72 @@ p.nn-order-status .status-item a.active {
     height: 38px;
     color: #222;
 }
+
+
+/* ÆÀÂÛ¿ò */
+.nn-comment-mask {
+    position: fixed;
+    top: 0;left: 0;width: 100%;height: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+.nn-comment-content {
+    width: 550px;
+    height: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -275px;
+    margin-top: -200px;background-color: #fff;
+    padding: 15px;
+    display: none;
+}
+.nn-comment-content .star-wrap img {
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    margin: 0 5px;
+    transition: all .2s ease;
+}
+.nn-comment-content .star-wrap img:hover {
+    transform: scale(1.2);
+}
+.nn-comment-content .close-comment img {
+    width: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.nn-comment-content .close-comment img:hover {
+    transform: rotate(180deg);
+}
+.nn-comment-content .comment-content {
+    margin: 20px;
+}
+.nn-comment-content .comment-content .content-area {
+    resize: none;
+    height: 230px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.nn-comment-content button.comment-submit {
+    width: 200px;
+    height: 45px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #f30110;
+    outline: none;
+    font-size: 16px;
+}
+.nn-comment-content button.comment-submit:active {
+    background-color: #EC3A45;
+    outline: none;
+}
+
+
+/* ½ûÖ¹bodyÔªËØ¹ö¶¯ */
+.forbidden-scroll {
+    overflow: hidden;
+}
+
