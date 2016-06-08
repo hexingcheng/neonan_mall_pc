@@ -53,28 +53,34 @@ p.nn-address-status .status-item a.active {
     width: 120px;
     text-align: center;
 }
-.address-list-item .right-button-group button {
+
+.address-list-item .right-button-group .button-item {
+    display: block;
+}
+.address-list-item .right-button-group .button {
     width: 110px;
     background: #ededed;
     color: #282828;
     border: none;
     font-size: 16px;
     height: 35px;
-    margin: 3px 0;
+    margin: 5px 0;
     border-radius: 3px;
     overflow: hidden;
+    display: block;
+    line-height: 35px;
 }
-.address-list-item .right-button-group button:active {
+.address-list-item .right-button-group .button:active {
     background: #FBF0F0;
 }
-.address-list-item .right-button-group button:focus {
+.address-list-item .right-button-group .button:focus {
     outline: none;
 }
-.address-list-item .right-button-group button.current {
+.address-list-item .right-button-group .button.current {
     background: #f30110;
     color: #fff;
 }
-.address-list-item .right-button-group button.current:active {
+.address-list-item .right-button-group .button.current:active {
     background: #EF3F4A;
 }
 
