@@ -30,22 +30,30 @@
         // popover
         var $commentMask = $(".nn-comment-mask");
         var $commentBox = $(".nn-comment-content");
-        $("#nn-order-list-wrap").on("click", ".comment", function(){
+        function showPopover(){
             $commentMask.css("display", "block");
             $commentBox.css("display", "block");
             $("body").addClass("forbidden-scroll");
+        }
+        function hiddenPopover(){
+            $commentMask.css("display", "none");
+            $commentBox.css("display", "none");
+            $("body").removeClass("forbidden-scroll");
+        }
+        $("#nn-order-list-wrap").on("click", ".comment", function(){        // order list page show comment popover
+            showPopover()
+        });
+        // address manage show add address popover
+        $("#add-usual-address").on("click", function(){
+            showPopover()
         });
         $commentBox.on("click", ".close-comment", function(){
-            $commentMask.css("display", "none");
-            $commentBox.css("display", "none");
-            $("body").removeClass("forbidden-scroll");
+            hiddenPopover()
         });
         $commentMask.on("click", function(){
-            $commentMask.css("display", "none");
-            $commentBox.css("display", "none");
-            $("body").removeClass("forbidden-scroll");
+            hiddenPopover()
         })
-
+        
 
     })
 })(jQuery)

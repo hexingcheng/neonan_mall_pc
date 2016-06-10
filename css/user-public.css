@@ -80,4 +80,8 @@
     min-height: 450px;
 }
 
+/* ½ûÖ¹bodyÔªËØ¹ö¶¯ */
+.forbidden-scroll {
+    overflow: hidden;
+}
 

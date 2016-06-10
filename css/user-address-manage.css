@@ -103,4 +103,98 @@ p.nn-address-status .status-item a.active {
     height: 48px;
 }
 
+/* ÆÀÂÛ¿ò */
+.nn-comment-mask {
+    position: fixed;
+    top: 0;left: 0;width: 100%;height: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+.nn-comment-content {
+    width: 550px;
+    height: 430px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -275px;
+    margin-top: -215px;background-color: #fff;
+    padding: 15px;
+    display: none;
+}
+
+.nn-comment-content .close-comment img {
+    width: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.nn-comment-content .close-comment img:hover {
+    transform: rotate(180deg);
+}
+.form-content-wrap {
+    padding: 0 15px;
+}
+.form-content-wrap .content-title{
+    padding: 0 25px;
+}
+.form-content-wrap .input-row {
+    margin: 5px 0;
+}
+.form-content-wrap .seconde-row .label-item {
+    vertical-align: top;
+}
+.input-row label.label-item {
+    width: 80px;
+    display: inline-block;
+    text-align: right;
+    padding: 0 10px 0 0;    
+    vertical-align: middle;
+}
+#country {
+    width: 90px;
+}
+select#city {
+    width: 300px;
+}
+textarea#detail-address {
+    width: 384px;
+    height: 80px;
+    min-width: 384px;
+    max-height: 72px;
+    padding: 2px 4px;
+}
+.input-row input {
+    padding: 2px 4px;
+}
+select.telphone {
+    width: 100px;
+}
+.set-default-address {
+    padding-left: 95px;
+        margin: 10px 0;
+}
+.set-default-address label {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.submit-group {
+        border-top: 1px solid #eee;
+    padding: 20px 0;
+}
+
+
+.nn-comment-content button.comment-submit {
+    width: 200px;
+    height: 45px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #f30110;
+    outline: none;
+    font-size: 16px;
+}
+.nn-comment-content button.comment-submit:active {
+    background-color: #EC3A45;
+    outline: none;
+}
+
 

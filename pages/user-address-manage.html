@@ -177,7 +177,7 @@
                 </div>
 
                 <div class="nn-usual-address">
-                    <button class="usual-btn">添加常用地址</button>
+                    <button class="usual-btn" id="add-usual-address">添加常用地址</button>
                 </div>
 
             </div>
@@ -262,6 +262,65 @@
                 <p class="copyright">CopyRight 2016 上海财洋网络科技有限公司  NeoNan.com 版权所有    经营许可证编号：沪B2-201</p>
             </div>
         </div>
+    </div>
+</div>
+<!-- 评论框内容 -->
+<div class="nn-comment-mask"></div>
+<div class="nn-comment-content">
+    <div class="close-row clearfix">
+        <div class="close-comment pull-right"><img src="../image/icon/comment-close-icon.png" alt=""/></div>
+    </div>
+    <div class="form-content-wrap">
+        <h3 class="content-title">添加地址</h3>
+        <div class="input-row first-row">
+            <label class="label-item">所在地区*</label>
+            <select name="country" id="country">
+                <option value="中国大陆">中国大陆</option>
+                <option value="美国">美国</option>
+                <option value="日本">日本</option>
+                <option value="韩国">韩国</option>
+            </select>
+            <select name="city" id="city">
+                <option value="北京">北京</option>
+                <option value="上海">上海</option>
+                <option value="广州">广州</option>
+                <option value="深圳">深圳</option>
+            </select>
+        </div>
+        <div class="input-row seconde-row">
+            <label class="label-item">详细地址*</label>
+            <textarea name="detail-address" id="detail-address" cols="" rows="" placeholder="建议你填入详细地址，例如街道名称，门牌号码，楼层和房间号等信息。"></textarea>
+        </div>
+        <div class="input-row">
+            <label class="label-item">邮政号码</label>
+            <input type="text" style="width:384px;" placeholder="如果您不清楚邮递区号，请填写000000">
+        </div>
+        <div class="input-row">
+            <label class="label-item">收货人姓名*</label>
+            <input type="text" style="width:384px;" placeholder="长度不超过25个字符">
+        </div>
+        <div class="input-row">
+            <label class="label-item">手机号码*</label>
+            <select name="telphone" id="" class="telphone">
+                <option value="中国大陆+86">中国大陆+86</option>
+                <option value="加拿大+00">加拿大+00</option>
+            </select>
+            <input type="tel" style="width: 280px;" placeholder="电话号码，手机号码必须填一项">
+        </div>
+        <div class="input-row">
+            <label class="label-item">电话号码*</label>
+            <select name="telphone" id="" class="telphone">
+                <option value="中国大陆+86">中国大陆+86</option>
+                <option value="加拿大+00">加拿大+00</option>
+            </select>
+            <input type="tel" style="width: 55px;" placeholder="区号">-<input type="tel" style="width: 95px;" placeholder="电话号码">-<input style="width: 95px;" type="tel" placeholder="分机">
+        </div>
+        <div class="set-default-address">
+            <input type="checkbox"><label>设置为默认收货地址</label>
+        </div>
+    </div>
+    <div class="text-center submit-group">
+        <button class="comment-submit">提交评论</button>
     </div>
 </div>
 <script src="../js/lib/jquery.min.js"></script>
