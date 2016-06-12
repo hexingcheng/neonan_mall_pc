@@ -1,0 +1,86 @@
+.nn-inner-con {
+    background: #fff;
+}
+.shop-info-box {
+     padding: 80px 0;
+     color: #333;
+ }
+.shop-info-box h2 {
+    font-weight: bold;
+    padding: 10px 0;
+}
+.shop-info-box .var-item {
+    padding-right: 10px;
+}
+
+.payment-method-box h5.payment-title {
+    margin: 0 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 8px 0px;
+    font-weight: bold;
+    color: #333;
+}
+.payment-method-box .payment-styles {
+    padding: 30px 5px;
+}
+.payment-method-box button {
+    width: 230px;
+    height:60px;
+    background-color: #fff;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #ccc;
+}
+.payment-method-box button:focus {
+    outline:none;
+    border: 1px solid #f00;
+}
+.payment-method-box button:hover {
+    outline:none;
+    border: 1px solid #f00;
+}
+.payment-method-box button.alipay-btn {
+    background-image: url("../image/icon/alipay-icon.png");
+    background-size: 115px;
+}
+.payment-method-box button.weichatpay-btn {
+    background-image: url("../image/icon/wechatpay-icon.png");
+    background-size: 125px;
+}
+.payment-method-box button.billpay-btn {
+    background-image: url("../image/icon/99billpay-icon.png");
+    background-size: 85px;
+}
+.payment-method-box button.onlinepay-btn {
+    background-image: url("../image/icon/onlinepay-icon.png");
+    background-size: 115px;
+}
+
+.color-subblack {
+    color: #919191;
+}
+
+.button-group {
+    padding: 0 10px 40px 0;
+}
+.button-group button.fast-payment {
+    background: #f30110;
+    width: 160px;
+    border: none;
+    height: 40px;
+    color: #fff;
+    border-radius: 4px;
+}
+.button-group button.fast-payment:focus {
+    outline: none;
+}
+.button-group button.fast-payment:active {
+    outline: none;
+    background: #8E4D51;
+}
+
+
+
