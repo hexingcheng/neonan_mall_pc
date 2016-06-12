@@ -16,3 +16,52 @@
 .de-info{
 	padding-left: 38px;
 }
+/*图片放大镜效果css*/
+.preview{width:427px; height:388px; position: relative;}
+.smallImg{position: absolute; top: 0; right: 0; bottom: 0; background-color:#f8f8f8; padding:17px 0px 17px 10px;  overflow:hidden;width: 92px;}
+#imageMenu {margin-left:0;position: absolute;top: 17px;right: 0;bottom:17px;z-index: 10000;overflow: hidden;}
+#imageMenu li {height:110px; width:92px;overflow:hidden;text-align:center;margin-bottom: 12px;}
+#imageMenu li img{width:92px; height:110px;cursor:pointer;}
+#imageMenu li#onlickImg img, #imageMenu li:hover img{ width:86px; height:104px; border:3px solid #959595;}
+.bigImg{position:relative; float:left; width:325px; height:388px; overflow:hidden;}
+.bigImg #midimg{width:325px; height:388px;}
+.bigImg #winSelector{width:200px; height:180px;}
+#winSelector{position:absolute; cursor:crosshair; filter:alpha(opacity=15); -moz-opacity:0.15; opacity:0.15; background-color:#000; border:1px solid #fff; display: none;}
+#bigView{position:absolute;overflow: hidden; z-index:999;display: none;}
+#bigView img{position:absolute;}
+.per-img-wrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 17px;
+	background-color: #f8f8f8;
+}
+.next-img-wrap{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 17px;
+	background-color: #f8f8f8;
+}
+.per-img{
+	width: 11px;
+	height: 6px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left:-5px;
+	background: url(../image/icon/pre-img.png) center 0 no-repeat;
+	cursor: pointer;
+}
+.next-img{
+	width: 11px;
+	height: 6px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left:-5px;
+	background: url(../image/icon/next-img.png) center 0 no-repeat;
+	cursor: pointer;
+}

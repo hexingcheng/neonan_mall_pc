@@ -6,25 +6,9 @@
 	<link rel="stylesheet" href="../css/neat.css">
 	<link rel="stylesheet" href="../css/public.css">
 	<link rel="stylesheet" href="../css/layout.css">
-	
 	<link rel="stylesheet" href="../css/goods-detail.css">
 	<style type="text/css">
-/* reset */
-.preview{width:427px; height:465px; position: relative;}
-/* smallImg */
-.smallImg{position:relative; height:52px; margin-top:1px; background-color:#F1F0F0; padding:6px 5px; width:390px; overflow:hidden;float:left;}
-#imageMenu {height:50px; width:360px; overflow:hidden; margin-left:0; float:left;}
-#imageMenu li {height:50px; width:60px; overflow:hidden; float:left; text-align:center;}
-#imageMenu li img{width:50px; height:50px;cursor:pointer;}
-#imageMenu li#onlickImg img, #imageMenu li:hover img{ width:44px; height:44px; border:3px solid #959595;}
-/* bigImg */
-.bigImg{position:relative; float:left; width:427px; height:400px; overflow:hidden;}
-.bigImg #midimg{width:427px; height:400px;}
-.bigImg #winSelector{width:235px; height:210px;}
-#winSelector{position:absolute; cursor:crosshair; filter:alpha(opacity=15); -moz-opacity:0.15; opacity:0.15; background-color:#000; border:1px solid #fff;}
-/* bigView */
-#bigView{position:absolute;overflow: hidden; z-index:999;}
-#bigView img{position:absolute;}
+
 </style>
 </head>
 <body>
@@ -48,28 +32,31 @@
 			<div class="fl detail-pic">
 				<div class="preview">
 					<div id="vertical" class="bigImg">
-						<img src="../image/img/mid/05.jpg" width="400" height="400" alt="" id="midimg" />
-						<div style="display:none;" id="winSelector"></div>
-					</div><!--bigImg end-->
-					
+						<img src="../image/img/mid/05.jpg" alt="" id="midimg" />
+						<div id="winSelector"></div>
+					</div>
 					<div class="smallImg">
-						<!-- <div class="scrollbutton smallImgUp disabled"></div> -->
+						<div class="per-img-wrap">
+							<span class="per-img"></span>
+						</div>
 						<div id="imageMenu">
 							<ul>
 								<li id="onlickImg"><img src="../image/img/small/05.jpg" width="68" height="68" alt="洋妞"/></li>
-								<li><img src="../image/img/small/02.jpg" width="68" height="68" alt="洋妞"/></li>
-								<li><img src="../image/img/small/03.jpg" width="68" height="68" alt="洋妞"/></li>
-								<li><img src="../image/img/small/04.jpg" width="68" height="68" alt="洋妞"/></li>
-								<li><img src="../image/img/small/01.jpg" width="68" height="68" alt="洋妞"/></li>
-								<li><img src="../image/img/small/06.jpg" width="68" height="68" alt="洋妞"/></li>
-								<li><img src="../image/img/small/04.jpg" width="68" height="68" alt="洋妞"/></li>
+								<li><img src="../image/img/small/02.jpg" alt="洋妞"/></li>
+								<li><img src="../image/img/small/03.jpg" alt="洋妞"/></li>
+								<li><img src="../image/img/small/04.jpg" alt="洋妞"/></li>
+								<li><img src="../image/img/small/01.jpg" alt="洋妞"/></li>
+								<li><img src="../image/img/small/06.jpg" alt="洋妞"/></li>
+								<li><img src="../image/img/small/04.jpg" alt="洋妞"/></li>
 							</ul>
 						</div>
-						<!-- <div class="scrollbutton smallImgDown"></div> -->
+						<div class="next-img-wrap">
+							<span class="next-img"></span>
+						</div>
 					</div><!--smallImg end-->
 					
-					<div id="bigView" style="display:none;">
-						<img width="800" height="800" alt="" src="" />
+					<div id="bigView">
+						<img alt="" src="" />
 					</div>
 					
 				</div>
@@ -156,10 +143,12 @@
 			</div>	
 		</div>
 	</div>
-	<script src="../js/lib/jquery.1.4.2-min.js"></script>
+	<script src="../js/lib/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-
+	$('.next-img').on('click',function(){
+		alert(1)
+	})
     //点击到中图
     var midChangeHandler = null;
 	
@@ -238,7 +227,7 @@ $(document).ready(function(){
         var scrollY = Y * $viewImgHeight / $imgHeight;
 
         $("#bigView img").css({ "left": scrollX * -1, "top": scrollY * -1 });
-        $("#bigView").css({ "top": 0, "left": $(".preview").offset().left + $(".preview").width() });
+        $("#bigView").css({ "top": 0, "left": $(".preview").position().left + $(".preview").width() });
         var obj = { left: X, top: Y };
         console.log(JSON.stringify(obj))
         return { left: X, top: Y };
