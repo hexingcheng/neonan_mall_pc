@@ -1,13 +1,18 @@
 .detail-content{
-	padding-top: 40px;
+	padding-top: 10px;
 	background-color: #f8f8f8;
 }
 .de-info{
 	overflow: hidden;
 }
 .detail-pic{
-	overflow: hidden;
 	width: 427px;
 	background-color: #fff;
 	position: relative;
+}
+.big-pic{
+	position: relative;
+}
+.de-info{
+	padding-left: 38px;
 }

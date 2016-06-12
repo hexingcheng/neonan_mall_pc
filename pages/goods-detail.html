@@ -6,7 +6,26 @@
 	<link rel="stylesheet" href="../css/neat.css">
 	<link rel="stylesheet" href="../css/public.css">
 	<link rel="stylesheet" href="../css/layout.css">
+	
 	<link rel="stylesheet" href="../css/goods-detail.css">
+	<style type="text/css">
+/* reset */
+.preview{width:427px; height:465px; position: relative;}
+/* smallImg */
+.smallImg{position:relative; height:52px; margin-top:1px; background-color:#F1F0F0; padding:6px 5px; width:390px; overflow:hidden;float:left;}
+#imageMenu {height:50px; width:360px; overflow:hidden; margin-left:0; float:left;}
+#imageMenu li {height:50px; width:60px; overflow:hidden; float:left; text-align:center;}
+#imageMenu li img{width:50px; height:50px;cursor:pointer;}
+#imageMenu li#onlickImg img, #imageMenu li:hover img{ width:44px; height:44px; border:3px solid #959595;}
+/* bigImg */
+.bigImg{position:relative; float:left; width:427px; height:400px; overflow:hidden;}
+.bigImg #midimg{width:427px; height:400px;}
+.bigImg #winSelector{width:235px; height:210px;}
+#winSelector{position:absolute; cursor:crosshair; filter:alpha(opacity=15); -moz-opacity:0.15; opacity:0.15; background-color:#000; border:1px solid #fff;}
+/* bigView */
+#bigView{position:absolute;overflow: hidden; z-index:999;}
+#bigView img{position:absolute;}
+</style>
 </head>
 <body>
 	<div class="header">
@@ -24,12 +43,38 @@
 			</div>	
 		</div>
 	</div>
-	<div class="content" style="height:500px;">
+	<div class="content">
 		<div class="detail-content toCenter clear">
 			<div class="fl detail-pic">
-				1
+				<div class="preview">
+					<div id="vertical" class="bigImg">
+						<img src="../image/img/mid/05.jpg" width="400" height="400" alt="" id="midimg" />
+						<div style="display:none;" id="winSelector"></div>
+					</div><!--bigImg end-->
+					
+					<div class="smallImg">
+						<!-- <div class="scrollbutton smallImgUp disabled"></div> -->
+						<div id="imageMenu">
+							<ul>
+								<li id="onlickImg"><img src="../image/img/small/05.jpg" width="68" height="68" alt="洋妞"/></li>
+								<li><img src="../image/img/small/02.jpg" width="68" height="68" alt="洋妞"/></li>
+								<li><img src="../image/img/small/03.jpg" width="68" height="68" alt="洋妞"/></li>
+								<li><img src="../image/img/small/04.jpg" width="68" height="68" alt="洋妞"/></li>
+								<li><img src="../image/img/small/01.jpg" width="68" height="68" alt="洋妞"/></li>
+								<li><img src="../image/img/small/06.jpg" width="68" height="68" alt="洋妞"/></li>
+								<li><img src="../image/img/small/04.jpg" width="68" height="68" alt="洋妞"/></li>
+							</ul>
+						</div>
+						<!-- <div class="scrollbutton smallImgDown"></div> -->
+					</div><!--smallImg end-->
+					
+					<div id="bigView" style="display:none;">
+						<img width="800" height="800" alt="" src="" />
+					</div>
+					
+				</div>
 			</div>
-			<div class="de-info">1</div>
+			<div class="de-info">1asdasasasasas</div>
 		</div>
 	</div>
 	<div class="footer">
@@ -95,7 +140,7 @@
 			<div class="foter-content toCenter">
 				<div class="footer-logo fl">
 					<a href="">
-						<img src="../image/footer-logo.png" alt="" class="footer-lgo-img">
+						<img src="../image/footer-logo.png" alt="" class="footer-lgo-img" jqimg="../image/footer-logo.png">
 					</a>
 				</div>
 				<div class="rights">
@@ -111,8 +156,95 @@
 			</div>	
 		</div>
 	</div>
-	<script src="../js/lib/jquery.min.js"></script>
-	<script src="../js/lib/jquery.jqzoom.js"></script>
-	<script src="../js/lib/lanrenzhijia.js"></script>
+	<script src="../js/lib/jquery.1.4.2-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    //点击到中图
+    var midChangeHandler = null;
+	
+    $("#imageMenu li img").bind("click", function(){
+		if ($(this).attr("id") != "onlickImg") {
+			midChange($(this).attr("src").replace("small", "mid"));
+			$("#imageMenu li").removeAttr("id");
+			$(this).parent().attr("id", "onlickImg");
+		}
+	})
+
+    function midChange(src) {
+        $("#midimg").attr("src", src).load(function() {
+            changeViewImg();
+        });
+    }
+
+    //大视窗看图
+    function mouseover(e) {
+        if ($("#winSelector").css("display") == "none") {
+            $("#winSelector,#bigView").show();
+        }
+        $("#winSelector").css(fixedPosition(e));
+        e.stopPropagation();
+    }
+    function mouseOut(e) {
+        if ($("#winSelector").css("display") != "none") {
+            $("#winSelector,#bigView").hide();
+        }
+        e.stopPropagation();
+    }
+
+
+    $("#midimg").mouseover(mouseover); //中图事件
+    $("#midimg,#winSelector").mousemove(mouseover).mouseout(mouseOut); //选择器事件
+
+    var $divWidth = $("#winSelector").width(); //选择器宽度
+    var $divHeight = $("#winSelector").height(); //选择器高度
+    var $imgWidth = $("#midimg").width(); //中图宽度
+    var $imgHeight = $("#midimg").height(); //中图高度
+    var $viewImgWidth = $viewImgHeight = $height = null; //IE加载后才能得到 大图宽度 大图高度 大图视窗高度
+
+    function changeViewImg() {
+        $("#bigView img").attr("src", $("#midimg").attr("src").replace("mid", "big"));
+    }
+
+    changeViewImg();
+
+    $("#bigView").scrollLeft(0).scrollTop(0);
+    function fixedPosition(e) {
+        if (e == null) {
+            alert('出现错误')
+            return;
+        }
+        var $imgLeft = $("#midimg").offset().left; //中图左边距
+        var $imgTop = $("#midimg").offset().top; //中图上边距
+        X = e.pageX - $imgLeft - $divWidth / 2; //selector顶点坐标 X
+        Y = e.pageY - $imgTop - $divHeight / 2; //selector顶点坐标 Y
+        X = X < 0 ? 0 : X;
+        Y = Y < 0 ? 0 : Y;
+        X = X + $divWidth > $imgWidth ? $imgWidth - $divWidth : X;
+        Y = Y + $divHeight > $imgHeight ? $imgHeight - $divHeight : Y;
+        
+        if ($viewImgWidth == null) {
+            $viewImgWidth = $("#bigView img").outerWidth();
+            $viewImgHeight = $("#bigView img").height();
+            if ($viewImgWidth < 200 || $viewImgHeight < 200) {
+                $viewImgWidth = $viewImgHeight = 800;
+            }
+
+            $height = $divHeight * $viewImgHeight / $imgHeight;
+            $("#bigView").width($divWidth * $viewImgWidth / $imgWidth);
+            $("#bigView").height($height);
+        }
+        var scrollX = X * $viewImgWidth / $imgWidth;
+        var scrollY = Y * $viewImgHeight / $imgHeight;
+
+        $("#bigView img").css({ "left": scrollX * -1, "top": scrollY * -1 });
+        $("#bigView").css({ "top": 0, "left": $(".preview").offset().left + $(".preview").width() });
+        var obj = { left: X, top: Y };
+        console.log(JSON.stringify(obj))
+        return { left: X, top: Y };
+    }
+
+});
+</script>
 </body>
 </html>
