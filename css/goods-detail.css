@@ -19,7 +19,7 @@
 /*图片放大镜效果css*/
 .preview{width:427px; height:388px; position: relative;}
 .smallImg{position: absolute; top: 0; right: 0; bottom: 0; background-color:#f8f8f8; padding:17px 0px 17px 10px;  overflow:hidden;width: 92px;}
-#imageMenu {margin-left:0;position: absolute;top: 17px;right: 0;bottom:17px;z-index: 10000;overflow: hidden;}
+#imageMenu {width:92px;margin-left:0;position: absolute;top: 17px;right: 0;bottom:17px;z-index: 10000;overflow: hidden;}
 #imageMenu li {height:110px; width:92px;overflow:hidden;text-align:center;margin-bottom: 12px;}
 #imageMenu li img{width:92px; height:110px;cursor:pointer;}
 #imageMenu li#onlickImg img, #imageMenu li:hover img{ width:86px; height:104px; border:3px solid #959595;}
@@ -64,4 +64,11 @@
 	margin-left:-5px;
 	background: url(../image/icon/next-img.png) center 0 no-repeat;
 	cursor: pointer;
+}
+.list-ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }

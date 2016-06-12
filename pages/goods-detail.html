@@ -40,7 +40,7 @@
 							<span class="per-img"></span>
 						</div>
 						<div id="imageMenu">
-							<ul>
+							<ul class="list-ul">
 								<li id="onlickImg"><img src="../image/img/small/05.jpg" width="68" height="68" alt="洋妞"/></li>
 								<li><img src="../image/img/small/02.jpg" alt="洋妞"/></li>
 								<li><img src="../image/img/small/03.jpg" alt="洋妞"/></li>
@@ -147,7 +147,14 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	$('.next-img').on('click',function(){
-		alert(1)
+		$('.list-ul').animate({
+			top:"+=-122px"
+		})
+	})
+	$('.per-img').on('click',function(){
+		$('.list-ul').animate({
+			top:"+=122px"
+		})
 	})
     //点击到中图
     var midChangeHandler = null;
