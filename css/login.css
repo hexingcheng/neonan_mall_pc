@@ -1,0 +1,90 @@
+.nn-inner-con {
+	background: #f8f8f8;
+	    padding: 30px 0;
+}
+.nn-left-ad {
+    width: 580px;
+    height: 500px;
+}
+.inner-add-box {
+    width: 100%;
+    height: 380px;
+    background: #e2e2e2;
+    color: #fff;
+    margin-top: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+
+
+
+
+.nn-login-box {
+    min-height: 510px;
+    margin-left: 580px;
+    background: #fff;
+}
+.login-inner-box {
+    background-color: #fff;
+    padding: 25px;
+}
+.login-inner-box h2 {
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+    color: #333;
+}
+.login-inner-box .input-row {
+    margin: 23px 10px;
+
+}
+.login-inner-box input[type="text"],
+.login-inner-box input[type="password"] {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.input-row.checkbox-row input {
+    vertical-align: 1px;
+}
+.input-row.checkbox-row label {
+    font-weight: bold;
+    color: #333;
+    font-size: 13px;
+}
+.button-group {
+    margin: 20px 10px 10px 10px;
+}
+.button-group button.login-btn {
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    background: #f30110;
+    border: none;
+    border-radius: 3px;
+    height: 37px;
+}
+.button-group button.login-btn:active {
+    background: #B94249;
+}
+.button-group button.login-btn:focus {
+	outline: none;
+}
+
+.forgot-link {
+	color: #8e8e8e;    padding: 0 7px;
+}
+.forgot-link.after-line:after {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #8e8e8e;
+}
+a.fast-login {
+    padding: 0px 20px 0 12px;
+}
+
+
+
+
+
