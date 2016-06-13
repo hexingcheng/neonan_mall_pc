@@ -1,0 +1,69 @@
+.nn-inner-con {
+    background: #f8f8f8;
+    color: #2b2b2b;
+}
+
+/* 地址样式 */
+.nn-address-list {
+    background: #fff;
+}
+.address-list-item {
+    margin-top: 10px;
+}
+.address-list-item .address-num-box {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+.address-list-item .address-num-box .address-string a {
+    color: #282828;
+}
+.address-list-item .address-item-detail {
+    padding: 15px;
+}
+.address-list-item .right-button-group {
+    width: 120px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.address-list-item .right-button-group .button-item {
+    display: block;
+}
+.address-list-item .right-button-group .button {
+    width: 110px;
+    background: #ededed;
+    color: #282828;
+    border: none;
+    font-size: 16px;
+    height: 35px;
+    margin: 5px 0;
+    border-radius: 3px;
+    overflow: hidden;
+    display: block;
+    line-height: 35px;
+}
+.address-list-item .right-button-group .button:active {
+    background: #FBF0F0;
+}
+.address-list-item .right-button-group .button:focus {
+    outline: none;
+}
+.address-list-item .right-button-group .button.current {
+    background: #f30110;
+    color: #fff;
+}
+.address-list-item .right-button-group .button.current:active {
+    background: #EF3F4A;
+}
+.address-list-item span.address-info-title {
+    color: #919191;
+}
+
+
+
+
+
+
