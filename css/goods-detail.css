@@ -1,6 +1,7 @@
 .detail-content{
 	padding-top: 10px;
 	background-color: #f8f8f8;
+	margin-bottom: 44px;
 }
 .de-info{
 	overflow: hidden;
@@ -14,7 +15,9 @@
 	position: relative;
 }
 .de-info{
+	background-color: #f8f8f8;
 	padding-left: 38px;
+	padding-right: 50px;
 }
 /*图片放大镜效果css*/
 .preview{width:427px; height:388px; position: relative;}
@@ -71,4 +74,243 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
+}
+.b-title{
+	font-size: 26px;
+	color: #232323;
+	line-height: 28px;
+}
+.b-qu{
+	font-size: 18px;
+	color: #888888;
+	line-height: 42px;
+	padding-bottom: 20px
+}
+.b-price{
+	line-height: 38px;
+	font-size: 18px;
+	color: #232323;
+	border-bottom: 1px solid #ebebeb;
+}
+.price-value-now{
+	font-size: 26px;
+	color: #f30110;
+}
+.on-market{
+	color: #888
+}
+.add-cart{
+	padding-top: 75px;
+	padding-left:22px;
+}
+.add-car-tips{
+	padding-left: 52px;
+	background:url(../image/icon/add-cart-su.png) 0 center no-repeat;
+	font-size: 16px;
+}
+.tips-value{
+	color: #232323;
+}
+.cart-info{
+	color: #7f7f7f;
+}
+.cart-info span{
+	color: #f30110;
+}
+.btn-row{
+	padding-top: 72px;
+}
+.btn-row a{
+	display: inline-block;
+	height: 48px;
+	border-radius: 2px;
+	line-height:48px;
+	color: #fff;
+	font-size: 18px;
+	padding: 0 48px 0 30px;
+	position: relative;
+}
+.to-buy{
+	margin-right: 20px;
+	background-color: #0c0c0c
+}
+.continue-find{
+	background-color: #f30110
+}
+.btn-row a span{
+	position: absolute;
+	width: 9px;
+	height: 16px;
+	background:url(../image/icon/right-arrow.png) 0 center no-repeat;
+	top: 50%;
+	margin-top: -8px;
+	right:22px;
+}
+.choose-goods{
+	padding-top: 26px;
+}
+.item{
+	font-size: 14px;
+	color: #898989;
+}
+.c-color{
+	padding-bottom: 16px;
+}
+.c-color .c-color-item{
+	cursor: pointer;
+	display: inline-block;
+	border:1px solid #cecece;
+	width: 43px;
+	height: 43px;
+}
+.c-color .active{
+	border:2px solid #0c0c0c;
+	width: 41px;
+	height: 41px
+}
+.c-color-text{
+	line-height: 45px;
+	vertical-align: top;
+}
+.c-color .c-color-item:hover{
+	border:2px solid #0c0c0c;
+	width: 41px;
+	height: 41px
+}
+.c-size-item{
+	cursor: pointer;
+	width: 39px;
+	height: 27px;
+	border:1px solid #cecece;
+	line-height: 27px;
+	text-align: center;
+	color: #a7a7a7;
+	display: inline-block;
+}
+.c-size{
+	padding-bottom: 24px;
+}
+.c-size .active{
+	color: #fff;
+	background-color:#000;
+	border-color:#000;
+}
+.c-size-item:hover{
+	color: #fff;
+	background-color:#000;
+	border-color:#000;
+}
+.c-size-text{
+	vertical-align: top;
+	line-height:29px;
+}
+.c-num{
+	padding-bottom: 36px;
+	font-size: 0;
+}
+.c-num-item{
+	cursor: pointer;
+	font-size: 14px;
+	display: inline-block;
+	text-align: center;
+	line-height: 27px;
+	height: 27px;
+	border:1px solid #cecece;
+}
+.c-num-text{
+	font-size: 14px;
+	vertical-align: top;
+	line-height: 29px;
+}
+.end-all{
+	margin-left:-1px;
+	width: 56px;
+}
+.plus{
+	margin-left: 4px;
+}
+.plus,.add{
+
+	width: 26px;
+}
+.add{
+	margin-left: -1px;
+}
+.buy-btn a{
+	position: relative;
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 3px;
+}
+.buy{
+	margin-right: 10px;
+	padding: 0 62px 0 45px;
+	background: url(../image/icon/buy-next-icon.png) 150px center no-repeat #f30110;
+}
+.collect{
+	background: url(../image/icon/collect-icon.png) 20px center no-repeat #b5b5b5;
+	padding: 0 28px 0 48px;
+}
+.more-detail{
+	background-color: #fff;
+	height: 800px;
+	padding: 0 22px;
+}
+.main-tab-wrap{
+	border-bottom: 1px solid #eaeaea
+}
+.tabs{
+	width: 395px;
+	margin:0 auto;
+}
+.tab-item{
+	float: left;
+}
+.tab-item a{
+	display: inline-block;
+	line-height: 62px;
+	font-size: 16px;
+	color: #8d8c8c
+}
+.tab-item .active{
+	color: #232323;
+	border-bottom: 2px solid #f30110;
+}
+.tab1{
+	position: relative;
+	padding-right: 26px;
+}
+.tab2{
+	padding-left: 26px
+}
+.tab1:after{
+	content: "";
+	position: absolute;
+	background-color: #e7e7e7;
+	width: 1px;
+	height: 28px;
+	top: 50%;
+	margin-top: -14px;
+	right: 0;
+}
+.good-basic-info{
+	padding: 38px 0 55px 0;
+}
+.gbi-item{
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	width: 25%;
+	color: #777777;
+	font-size: 14px;
+	border-right: 1px solid #ededed
+}
+.gbi-item-bold{
+	font-weight: bold;
+}
+.without-border{
+	border:0;
 }
