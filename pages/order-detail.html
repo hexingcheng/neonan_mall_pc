@@ -66,9 +66,54 @@
             </div>
         </div>
         <div class="order-detail-wrap">
-
+            <div class="order-list-bar">
+                <div class="title-bar clearfix">
+                    <span class="first-col-item pull-left sub-title-style">&nbsp;</span>
+                    <span class="second-col-item pull-left sub-title-style">商品详情</span>
+                    <span class="third-col-item pull-left sub-title-style">单价</span>
+                    <span class="fourth-col-item pull-left sub-title-style">数量</span>
+                    <span class="fifth-col-item pull-left sub-title-style">小计</span>
+                </div>
+                <div class="detail-bar clearfix">
+                    <span class="first-col-item pull-left text-center">
+                        <img src="../image/img/small-pic1.png" alt="">
+                    </span>
+                    <span class="second-col-item pull-left">
+                        <p class="item-title"><a href="">NOPAIN NOGAIN 牛男新款夏季T恤  限量发售</a></p>
+                        <p class="sub-title-style">
+                            颜色: <span class="item-color">白色</span>
+                            尺码: <span class="item-color">XL</span>
+                        </p>
+                    </span>
+                    <span class="third-col-item pull-left text-center">
+                        <span class="sub-title-style">¥</span>
+                        <span class="price-style">198.00</span>
+                    </span>
+                    <span class="fourth-col-item pull-left">
+                        <div class="num-wrap-component">
+                            <button class="subtraction-calc">-</button>
+                            <input type="text" id="item-number" value="1" min="1" max="100" step="1">
+                            <button class="plus-calc">+</button>
+                        </div>
+                    </span>
+                    <span class="fifth-col-item pull-left text-center">
+                        <span class="sub-title-style">¥</span>
+                        <span class="price-style">396.00</span>
+                    </span>
+                </div>
+            </div>
         </div>
-
+        <div class="order-total-box">
+            <p class="text-right">
+                商品总价(<span>￥396.00</span>) - 活动(<span>￥0.00</span>) + 运费(<span>￥10.00</span>) = 商品金额总计(<span>￥406.00</span>)
+            </p>
+            <p class="text-right">
+                商品总价（含运费）：￥<span class="price-style">406.00</span>
+            </p>
+            <div class="text-right button-group">
+                <button class="fast-payment">快速支付</button>
+            </div>
+        </div>
 
     </div>
 </div>
@@ -151,5 +196,17 @@
         </div>
     </div>
 </div>
+<script src="../js/lib/jquery.min.js"></script>
+<script>
+    (function($){
+        $(function(){
+            var $numInput = $("#item-number");
+            $numInput.on("keyup", function(){
+                var val = $(this).val();
+                
+            })
+        })
+    })(jQuery)
+</script>
 </body>
 </html>

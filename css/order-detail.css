@@ -69,5 +69,144 @@
 }
 
 
+.order-detail-wrap {
+    margin-top: 15px;
+}
+.order-list-bar {
+    background-color: #fff;
+    padding: 0 15px;
+}
+.order-list-bar .title-bar {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.order-list-bar .title-bar span {
+    text-align: center;
+}
+.order-list-bar .first-col-item {
+    width: 140px;
+}
+.order-list-bar span.second-col-item {
+    width: 400px;
+}
+.order-list-bar span.third-col-item {
+    width: 140px;
+}
+.order-list-bar span.fourth-col-item {
+    width: 150px;
+}
+.order-list-bar span.fifth-col-item {
+    width: 140px;
+}
+.order-list-bar .detail-bar {
+    padding: 15px 0;
+    height: 140px;
+}
+.order-list-bar .detail-bar span{
+    box-sizing: border-box;
+}
+.order-list-bar .detail-bar .first-col-item {
+    height: 140px;
+    overflow: hidden;
+    padding: 5px;
+}
+.order-list-bar .detail-bar .first-col-item img {
+    height: 100%;
+    width: 100%;
+}
+.order-list-bar .detail-bar p.item-title {
+    min-height: 50px;
+}
+.order-list-bar .detail-bar p.item-title a {
+    color: #282828;
+    font-size: 16px;
+}
+.order-list-bar .detail-bar p.item-title a:hover {
+    text-decoration: underline;
+}
+.order-list-bar .detail-bar span.second-col-item {
+    padding: 25px 10px;
+    height: 140px;
+}
+.order-list-bar .detail-bar span.third-col-item {
+    height: 140px;
+    line-height: 140px;
+}
+.order-list-bar .detail-bar span.fifth-col-item {
+    height: 140px;
+    line-height: 140px;
+}
+.order-list-bar .detail-bar span.fourth-col-item {
+    height: 140px;
+    padding: 57px 0;
+}
+.order-total-box {
+    padding: 20px 30px;
+    background: #fff;
+    margin-top: 15px;
+}
+.order-total-box span {
+    padding: 0 10px;
+}
+.order-total-box span.price-style {
+    padding: 0 5px 0 0;
+}
+.order-total-box .button-group {
+    margin-top: 10px;
+}
+button.fast-payment {
+    width: 140px;
+    box-sizing: border-box;
+    color: #fff;
+    background: #f30110;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+}
+button.fast-payment:active {
+    background: #B94249;
+}
 
-
+/* numbox component */
+.num-wrap-component {
+    width: 80px;
+    overflow: hidden;
+    height: 23px;
+    border: 1px solid #eee;
+    margin: 0 auto;
+}
+.num-wrap-component button.subtraction-calc {
+    border-right: 1px solid #eee;
+}
+.num-wrap-component button.plus-calc {
+    border-left: 1px solid #eee;
+}
+.num-wrap-component button {
+    width: 23px;
+    height: 23px;
+    border-radius: 0;
+    border: none;
+    background: #fff;
+    padding: 0;
+    font-size: 18px;
+    color: #6a6a6a;
+    float: left;
+}
+.num-wrap-component button:hover {
+    outline: none;
+    background: #f7f7f7;
+    color: #282828;
+}
+.num-wrap-component button:focus {
+    outline: none;
+}
+.num-wrap-component input {
+    float: left;
+    width: 26px;
+    border: none;
+    padding: 4px;
+    text-align: center;
+}
+.num-wrap-component input:focus {
+    outline: none;
+}
