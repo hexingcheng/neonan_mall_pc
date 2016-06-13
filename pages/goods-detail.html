@@ -32,7 +32,7 @@
 			<div class="fl detail-pic">
 				<div class="preview">
 					<div id="vertical" class="bigImg">
-						<img src="../image/img/mid/05.jpg" alt="" id="midimg" />
+						<img src="../image/img/small-pic1-mid.png" alt="" id="midimg" />
 						<div id="winSelector"></div>
 					</div>
 					<div class="smallImg">
@@ -41,13 +41,9 @@
 						</div>
 						<div id="imageMenu">
 							<ul class="list-ul">
-								<li id="onlickImg"><img src="../image/img/small/05.jpg" width="68" height="68" alt="洋妞"/></li>
-								<li><img src="../image/img/small/02.jpg" alt="洋妞"/></li>
-								<li><img src="../image/img/small/03.jpg" alt="洋妞"/></li>
-								<li><img src="../image/img/small/04.jpg" alt="洋妞"/></li>
-								<li><img src="../image/img/small/01.jpg" alt="洋妞"/></li>
-								<li><img src="../image/img/small/06.jpg" alt="洋妞"/></li>
-								<li><img src="../image/img/small/04.jpg" alt="洋妞"/></li>
+								<li id="onlickImg"><img src="../image/img/small-pic1.png" alt="" data-mid = "../image/img/small-pic1-mid.png" data-big = "../image/img/small-pic1-big.png"/></li>
+								<li><img src="../image/img/small-pic2.png" alt="" data-mid = "../image/img/small-pic2-mid.png" data-big = "../image/img/small-pic2-big.png"/></li>
+								<li><img src="../image/img/small-pic3.png" alt="" data-mid = "../image/img/small-pic3-mid.png" data-big = "../image/img/small-pic3-big.png"/></li>
 							</ul>
 						</div>
 						<div class="next-img-wrap">
@@ -61,7 +57,7 @@
 					
 				</div>
 			</div>
-			<div class="de-info">1asdasasasasas</div>
+			<div class="de-info">1</div>
 		</div>
 	</div>
 	<div class="footer">
@@ -161,15 +157,17 @@ $(document).ready(function(){
 	
     $("#imageMenu li img").bind("click", function(){
 		if ($(this).attr("id") != "onlickImg") {
-			midChange($(this).attr("src").replace("small", "mid"));
+			var mid = $(this).attr('data-mid');
+			var big = $(this).attr('data-big');
+			midChange(mid,big);
 			$("#imageMenu li").removeAttr("id");
 			$(this).parent().attr("id", "onlickImg");
 		}
 	})
 
-    function midChange(src) {
+    function midChange(src,big) {
         $("#midimg").attr("src", src).load(function() {
-            changeViewImg();
+            changeViewImg(big);
         });
     }
 
@@ -198,8 +196,13 @@ $(document).ready(function(){
     var $imgHeight = $("#midimg").height(); //中图高度
     var $viewImgWidth = $viewImgHeight = $height = null; //IE加载后才能得到 大图宽度 大图高度 大图视窗高度
 
-    function changeViewImg() {
-        $("#bigView img").attr("src", $("#midimg").attr("src").replace("mid", "big"));
+    function changeViewImg(big) {
+    	if(big){
+    		$("#bigView img").attr("src",big);
+    	}else{
+
+    	}
+        
     }
 
     changeViewImg();
