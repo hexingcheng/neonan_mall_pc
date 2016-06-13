@@ -20,7 +20,7 @@
     color: #282828;
 }
 .address-list-item .address-item-detail {
-    padding: 15px;
+    padding: 20px 35px;
 }
 .address-list-item .right-button-group {
     width: 120px;
@@ -61,8 +61,12 @@
 .address-list-item span.address-info-title {
     color: #919191;
 }
-
-
+.price-style {
+    font-size: 18px;color: #f30110;
+}
+.sub-title-style {
+    font-size: 14px;color: #919191;
+}
 
 
 
