@@ -1,0 +1,323 @@
+.nn-inner-con {
+    background: #f8f8f8;
+    color: #2b2b2b;
+}
+
+/* 地址样式 */
+.nn-address-list {
+    background: #fff;
+}
+.address-list-item {
+    margin-top: 10px;
+}
+.address-list-item .address-num-box {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+.address-list-item .address-num-box .address-string a {
+    color: #282828;
+}
+.address-list-item .address-item-detail {
+    padding: 20px 35px;
+}
+.address-list-item .right-button-group {
+    width: 120px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.address-list-item .right-button-group .button-item {
+    display: block;
+}
+.address-list-item .right-button-group .button {
+    width: 110px;
+    background: #ededed;
+    color: #282828;
+    border: none;
+    font-size: 16px;
+    height: 35px;
+    margin: 5px 0;
+    border-radius: 3px;
+    overflow: hidden;
+    display: block;
+    line-height: 35px;
+}
+.address-list-item .right-button-group .button:active {
+    background: #FBF0F0;
+}
+.address-list-item .right-button-group .button:focus {
+    outline: none;
+}
+.address-list-item .right-button-group .button.current {
+    background: #f30110;
+    color: #fff;
+}
+.address-list-item .right-button-group .button.current:active {
+    background: #EF3F4A;
+}
+.address-list-item span.address-info-title {
+    color: #919191;
+}
+.price-style {
+    font-size: 18px;color: #f30110;
+}
+.sub-title-style {
+    font-size: 14px;color: #919191;
+}
+
+
+.order-detail-wrap {
+    margin-top: 15px;
+}
+.order-list-bar {
+    background-color: #fff;
+    padding: 0 15px;
+}
+.order-list-bar .title-bar {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.order-list-bar .title-bar span {
+    text-align: center;
+}
+.order-list-bar .first-col-item {
+    width: 140px;
+}
+.order-list-bar span.second-col-item {
+    width: 400px;
+}
+.order-list-bar span.third-col-item {
+    width: 140px;
+}
+.order-list-bar span.fourth-col-item {
+    width: 150px;
+}
+.order-list-bar span.fifth-col-item {
+    width: 140px;
+}
+.order-list-bar .detail-bar {
+    padding: 15px 0;
+    height: 140px;
+}
+.order-list-bar .detail-bar span{
+    box-sizing: border-box;
+}
+.order-list-bar .detail-bar .first-col-item {
+    height: 140px;
+    overflow: hidden;
+    padding: 5px;
+}
+.order-list-bar .detail-bar .first-col-item img {
+    height: 100%;
+    width: 100%;
+}
+.order-list-bar .detail-bar p.item-title {
+    min-height: 55px;
+    max-height: 87px;
+    overflow: hidden;
+    line-height: 1.4;
+}
+.order-list-bar .detail-bar p.item-title a {
+    color: #282828;
+    font-size: 16px;
+}
+.order-list-bar .detail-bar p.item-title a:hover {
+    text-decoration: underline;
+}
+.order-list-bar .detail-bar span.second-col-item {
+    padding: 20px 10px;
+    height: 140px;
+}
+.order-list-bar .detail-bar span.third-col-item {
+    height: 140px;
+    line-height: 140px;
+}
+.order-list-bar .detail-bar span.fifth-col-item {
+    height: 140px;
+    line-height: 140px;
+}
+.order-list-bar .detail-bar span.fourth-col-item {
+    height: 140px;
+    padding: 57px 0;
+}
+.order-list-bar .detail-bar span.item-color {
+    padding-right: 30px;
+}
+
+.order-total-box {
+    padding: 20px 30px;
+    background: #fff;
+    margin-top: 15px;
+}
+.order-total-box span {
+    padding: 0 10px;
+}
+.order-total-box span.price-style {
+    padding: 0 5px 0 0;
+}
+.order-total-box .button-group {
+    margin-top: 20px;
+}
+button.fast-payment {
+    width: 140px;
+    box-sizing: border-box;
+    color: #fff;
+    background: #f30110;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+}
+button.fast-payment:active {
+    background: #B94249;
+}
+
+
+/* shopping cart 样式添加重置
+ */
+.shopping-cart span.checkbox-col-item {
+    width: 40px;
+}
+.shopping-cart .detail-bar span.checkbox-col-item {
+    height: 120px;
+    line-height: 120px;
+}
+.shopping-cart .detail-bar {
+    border-bottom: 1px solid #eee;
+    height: 120px;
+}
+.shopping-cart .detail-bar:last-child {
+    border-bottom: none;
+}
+.shopping-cart .first-col-item {
+    width: 130px;
+}
+.shopping-cart span.second-col-item {
+    width: 300px;
+}
+.shopping-cart span.third-col-item {
+    width: 130px;
+}
+.shopping-cart span.fourth-col-item {
+    width: 135px;
+}
+.shopping-cart span.fifth-col-item {
+    width: 130px;
+}
+.shopping-cart span.button-col-item {
+    width: 145px;
+    text-align: center;
+}
+
+.shopping-cart .detail-bar .first-col-item {
+    height: 120px;
+}
+.shopping-cart .detail-bar span.second-col-item {
+    height: 120px;
+}
+.shopping-cart .detail-bar span.third-col-item,
+.shopping-cart .detail-bar span.fifth-col-item{
+    height: 120px;
+    line-height: 120px;
+}
+.shopping-cart .detail-bar span.fourth-col-item {
+    height: 120px;
+    padding: 47px 0;
+}
+.shopping-cart .detail-bar .button-col-item a.button {
+    width: 110px;
+    background: #ededed;
+    color: #282828;
+    border: none;
+    font-size: 16px;
+    height: 35px;
+    margin: 5px auto;
+    border-radius: 3px;
+    overflow: hidden;
+    display: block;
+    line-height: 35px;
+}
+.shopping-cart .detail-bar .button-col-item a.button:active {
+    background: #FBF0F0;
+}
+input#select-all {
+    vertical-align: 1px;
+}
+p.shopping-goods-choose-box {
+    position: relative;
+    top: 20px;
+}
+p.shopping-goods-choose-box .remove-all {
+    margin: 0 10px;
+}
+p.shopping-goods-choose-box a {
+    text-decoration: underline;
+    color: #919191;
+}
+.shopping-cart-total-box .continu-shop {
+    width: 140px;
+    box-sizing: border-box;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+}
+.shopping-cart-total-box .continu-shop:active {
+    background: #4c4949;
+}
+
+
+
+/* numbox component */
+.num-wrap-component {
+    width: 80px;
+    overflow: hidden;
+    height: 23px;
+    border: 1px solid #eee;
+    margin: 0 auto;
+}
+.num-wrap-component button.subtraction-calc {
+    border-right: 1px solid #eee;
+}
+.num-wrap-component button.plus-calc {
+    border-left: 1px solid #eee;
+    position: relative;
+}
+.num-wrap-component button {
+    width: 23px;
+    height: 23px;
+    border-radius: 0;
+    border: none;
+    background: #fff;
+    padding: 0;
+    font-size: 18px;
+    color: #6a6a6a;
+    float: left;
+}
+.num-wrap-component button:hover {
+    outline: none;
+    background: #f7f7f7;
+    color: #282828;
+}
+.num-wrap-component button:focus {
+    outline: none;
+}
+.num-wrap-component button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+    background: #ededed;
+}
+.num-wrap-component input {
+    float: left;
+    width: 26px;
+    border: none;
+    padding: 4px;
+    text-align: center;
+}
+.num-wrap-component input:focus {
+    outline: none;
+}
+
