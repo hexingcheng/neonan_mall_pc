@@ -255,12 +255,12 @@
 	padding: 0 28px 0 48px;
 }
 .more-detail{
+	background-color: #f8f8f8;
+}
+.colorfff{
 	background-color: #fff;
-	height: 800px;
-	padding: 0 22px;
 }
 .main-tab-wrap{
-	border-bottom: 1px solid #eaeaea
 }
 .tabs{
 	width: 395px;
@@ -300,7 +300,6 @@
 	padding: 38px 0 55px 0;
 }
 .gbi-item{
-	text-align: center;
 	box-sizing: border-box;
 	float: left;
 	width: 25%;
@@ -308,9 +307,113 @@
 	font-size: 14px;
 	border-right: 1px solid #ededed
 }
+.gbi-item p{
+	padding-left: 35%;
+}
 .gbi-item-bold{
 	font-weight: bold;
 }
 .without-border{
 	border:0;
+}
+.add-margin{
+	margin:0 24px;
+	border-bottom: 1px solid #eaeaea
+}
+.size-info{
+	margin-top:40px;
+}
+.tab-wrap{
+	margin:0 24px;
+	border-bottom: 1px solid #eaeaea
+}
+.tab-text{
+	width: 156px;
+	line-height: 62px;
+	border-bottom:2px solid #f30110;
+	text-align: center;
+	font-size: 16px;
+	color: #232323;
+	margin:0 auto;
+}
+.side-detail{
+	padding: 52px 0 64px 0
+}
+.goods-copy-right{
+	font-size: 14px;
+	color: #d1d1d1;
+	line-height: 26px;
+	text-align: center;
+}
+.goods-pic{
+	padding-bottom: 86px;
+}
+.commet-wrap{
+	padding: 0 66px;
+}
+.uer-head-pic{
+	float: left;
+	width: 87px;
+}
+.c-time-star{
+	float: right;
+	width: 130px;
+}
+.nopadding{
+	padding: 0;
+}
+.c-commet-body{
+	padding-top: 44px;
+	padding-left: 18px;
+	padding-right: 20px;
+	overflow: hidden;
+}
+.head-wrap{
+	overflow: hidden;
+	width: 86px;
+	height: 86px;
+	border-radius: 50%;
+	margin: 44px 0 32px 0;
+}
+.head-pic{
+	display: block;
+	width: 86px;
+	height: 86px;
+	overflow: hidden;
+}
+.c-user-name{
+	padding-left: 20px;
+	font-size: 16px;
+	color: #939393;
+	background:url(../image/icon/user-ison.png) 0 center no-repeat;
+}
+.c-con{
+	font-size: 18px;
+	color: #232323;
+}
+.c-style{
+	font-size: 16px;
+	color: #939393;
+}
+.y-star,.b-star{
+	margin-right:2px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+}
+.c-star{
+	margin-top: 42px;
+}
+.y-star{
+	background: url(../image/icon/y-star.png) center center no-repeat;
+}
+.b-star{
+	background: url(../image/icon/b-star.png) center center no-repeat;
+}
+.commet-time{
+	padding-right: 8px;
+	font-size: 16px;
+	color: #939393;
+	text-align: right;
 }
