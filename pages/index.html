@@ -334,20 +334,19 @@
         </div>
     </div>
 </div>
-<script src="../js/lib/jquery.min.js"></script>
-<script src="../js/lib/swiper.min.js"></script>
+<script src="../js/lib/sea.js"></script>
 <script>
-    (function($){
-        $(function() {
-            // 首页轮播初始化
-            var indexSwiper = new Swiper('#index-slider', {
-                pagination: '#slider-pagination',
-                paginationClickable: true,
-                //autoplay: 4000,
-                loop: true
-            });
-        })
-    })(jQuery)
+    seajs.config({
+        base: "../js",
+        alias: {
+            "jquery": "lib/jquery.min",
+            'swiper': 'lib/swiper.min'
+        }
+    });
+    // 加载入口模块
+    seajs.use("main/page.index", function(init){
+        init.initPage();
+    });
 </script>
 </body>
 </html>

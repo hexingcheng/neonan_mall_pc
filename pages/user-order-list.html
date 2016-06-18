@@ -349,9 +349,9 @@
     </div>
     <div class="star-wrap text-center">
         <img src="../image/icon/star-active-icon.png" alt=""/>
-        <img src="../image/icon/star-active-icon.png" alt=""/>
-        <img src="../image/icon/star-active-icon.png" alt=""/>
-        <img src="../image/icon/star-active-icon.png" alt=""/>
+        <img src="../image/icon/star-icon.png" alt=""/>
+        <img src="../image/icon/star-icon.png" alt=""/>
+        <img src="../image/icon/star-icon.png" alt=""/>
         <img src="../image/icon/star-icon.png" alt=""/>
     </div>
     <div class="comment-content">
@@ -364,5 +364,31 @@
 
 <script src="../js/lib/jquery.min.js"></script>
 <script src="../js/user-public.js"></script>
+<script>
+    (function(){
+        $(function(){
+            var stars = ['../image/icon/star-active-icon.png', '../image/icon/star-icon.png'];
+            var index = 1;      // 默认为1分
+            $(".nn-comment-content .star-wrap").on("click", "img", function(){
+                index = $(this).index() + 1;
+                $(this).prevAll().add(this).attr("src", stars[0]);
+                $(this).nextAll().attr("src", stars[1]);
+            })
+            //  提交评论
+            $(".nn-comment-content .comment-submit").on("click", function(){
+                var message = $.trim($(".nn-comment-content .content-area").val());
+                if(!message){
+                    alert("请填写评论信息.");
+                    return;
+                }
+                var comment = {
+                    score : index,
+                    comment : message
+                }
+                alert(JSON.stringify(comment))
+            })
+        })
+    })()
+</script>
 </body>
 </html>

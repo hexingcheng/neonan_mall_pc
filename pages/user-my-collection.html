@@ -248,7 +248,19 @@
         </div>
     </div>
 </div>
-<script src="../js/lib/jquery.min.js"></script>
-<script src="../js/user-public.js"></script>
+<script src="../js/lib/sea.js"></script>
+<script>
+    seajs.config({
+        base: "../js",
+        alias: {
+            "jquery": "lib/jquery.min",
+            'swiper': 'lib/swiper.min'
+        }
+    });
+    // 加载入口模块
+    seajs.use("main/page-user-collection", function(init){
+        init.initPage();
+    });
+</script>
 </body>
 </html>

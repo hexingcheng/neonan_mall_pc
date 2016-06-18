@@ -430,33 +430,19 @@
         </div>
     </div>
 </div>
-<script src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/sea.js"></script>
 <script>
-    (function($){
-        $(function() {
-            var $allSubList = $("#all-sort").find(".sub-menu-list");
-            var $allIconToggle = $("#all-sort").find(".icon-toggle");
-            $("#all-sort").on("click", ".icon-toggle", function(){
-                var $this = $(this);
-                var $subList = $this.parents(".list-item").find(".sub-menu-list");
-                var flag = $this.hasClass("plus-icon");
-                for(var i = 0; i < $allIconToggle.size(); i++){
-                    if($allIconToggle.hasClass("subtraction-icon")){
-                        $allIconToggle.eq(i)
-                                .removeClass("subtraction-icon").addClass("plus-icon")
-                                .parents(".list-item").find(".sub-menu-list");
-                    }
-                }
-                $allSubList.slideUp();
-                if(flag){
-                    $subList.slideDown();
-                    $this.toggleClass('plus-icon').toggleClass("subtraction-icon");
-                } else {
-                    $subList.slideUp();
-                }
-            })
-        })
-    })(jQuery)
+    seajs.config({
+        base: "../js",
+        alias: {
+            "jquery": "lib/jquery.min",
+            'swiper': 'lib/swiper.min'
+        }
+    });
+    // 加载入口模块
+    seajs.use("main/page-sort-by", function(init){
+        init.initPage();
+    });
 </script>
 </body>
 </html>

@@ -1,11 +1,12 @@
 /**
- * Created by lenovo on 2016/6/5.
+ * Created by lee on 16/6/18.
  */
 define(function(require, exports, module){
     require('jquery');
+    var userPublic = require("../user-public");
     var $ = jQuery;
 
-    module.exports = {
+    var _dom = {
         init : function(){
             var _this = this;
             $(function() {
@@ -13,7 +14,6 @@ define(function(require, exports, module){
             })
         },
         domInit : function(){
-            //  left menu
             var $allSubList = $("#all-sort").find(".sub-menu-list");
             var $allIconToggle = $("#all-sort").find(".icon-toggle");
             $("#all-sort").on("click", ".icon-toggle", function(){
@@ -35,34 +35,11 @@ define(function(require, exports, module){
                     $subList.slideUp();
                 }
             })
-
-            // popover
-            var $commentMask = $(".nn-comment-mask");
-            var $commentBox = $(".nn-comment-content");
-            function showPopover(){
-                $commentMask.css("display", "block");
-                $commentBox.css("display", "block");
-                $("body").addClass("forbidden-scroll");
-            }
-            function hiddenPopover(){
-                $commentMask.css("display", "none");
-                $commentBox.css("display", "none");
-                $("body").removeClass("forbidden-scroll");
-            }
-            $("#nn-order-list-wrap").on("click", ".comment", function(){        // order list page show comment popover
-                showPopover()
-            });
-            // address manage show add address popover
-            $("#add-usual-address").on("click", function(){
-                showPopover()
-            });
-            $commentBox.on("click", ".close-comment", function(){
-                hiddenPopover()
-            });
-            $commentMask.on("click", function(){
-                hiddenPopover()
-            })
         }
+    };
+
+    exports.initPage = function(){
+        _dom.init();
     };
 
 });
