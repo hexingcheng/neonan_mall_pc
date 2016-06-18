@@ -13,8 +13,11 @@ define(function(require, exports, module){
             })
         },
         domInit : function(){
-            // TODO
+            this.initNumberBox();       // 初始化数字按钮
+            this.checkAll();        // 是否选中所有商品
 
+        },
+        initNumberBox : function(){
             var $numInput = $(".num-wrap-component .item-number");
             var $numInputComponent = $(".num-wrap-component");
             var $sub = $numInputComponent.find(".subtraction-calc");
@@ -63,6 +66,19 @@ define(function(require, exports, module){
                 $input.val(++val);
                 checkoutValidate($input);
             });
+        },
+        //  选择所有商品
+        checkAll: function(){
+            var $selected = $("#select-all");
+            var $allCheckbox = $(".checkbox-col-item input[type=checkbox]");
+            $selected.on("change", function(){
+                console.log($selected.is(":checked"))
+                if($selected.is(":checked")){
+                    $allCheckbox.prop("checked", true);
+                } else {
+                    $allCheckbox.prop("checked", false);
+                }
+            })
 
         }
     };
